@@ -10,6 +10,7 @@ A tiny macOS menu bar app that keeps remote Citrix sessions awake — across Spa
 [![Platform](https://img.shields.io/badge/platform-macOS%2012%2B-black)](#requirements)
 [![Python](https://img.shields.io/badge/python-3.10%2B-blue)](#requirements)
 [![License](https://img.shields.io/badge/license-MIT-green)](LICENSE)
+[![Ko-fi](https://img.shields.io/badge/buy%20me%20some-tokens-ff5e5b?logo=ko-fi&logoColor=white)](https://ko-fi.com/C5Q128BM5J)
 
 </div>
 
@@ -243,6 +244,15 @@ git push origin v1.0.1
 The workflow builds the bundle, ad-hoc signs it, smoke-tests that it launches,
 packages a DMG, and attaches it to a new GitHub Release. The tag must match
 `__version__` or the build fails deliberately.
+
+## Buy me some tokens
+
+This is free and always will be. If it saved you from re-authenticating one
+too many times, you can [**buy me some tokens**](https://ko-fi.com/C5Q128BM5J) ☕
+
+<a href="https://ko-fi.com/C5Q128BM5J">
+  <img src="https://ko-fi.com/img/githubbutton_sm.svg" alt="Buy me some tokens on Ko-fi" height="36">
+</a>
 
 ## Credits
 
