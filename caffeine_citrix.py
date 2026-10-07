@@ -21,7 +21,7 @@ from ApplicationServices import (
     kAXTrustedCheckOptionPrompt,
 )
 
-__version__ = "1.0.0"
+__version__ = "1.0.1"
 
 CITRIX_PROCESS = "Citrix Viewer"
 LOG_PATH = os.path.expanduser("~/Library/Logs/caffeine_citrix.log")
@@ -221,12 +221,12 @@ class CaffeineCitrixApp(rumps.App):
         self._set_status("Running")
 
         # rumps.Timer only honours an interval change while stopped, so the
-        # timer is always configured before it is started.
+        # timer is always configured before it is started. Its NSTimer is
+        # created with a fire date of now, so the first tick runs immediately
+        # and no explicit priming call is needed.
         self.timer.stop()
         self.timer.interval = self.interval
         self.timer.start()
-
-        self.tick(None)  # Give immediate feedback instead of waiting a full period.
 
     def stop(self) -> None:
         log.info("Stopping keepalive")
